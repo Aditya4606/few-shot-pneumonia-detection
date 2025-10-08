@@ -1,0 +1,4 @@
+AUC-ROC Score of the Meta-Reptile ModelAUC = 0.8667
+
+Accuracy of the Meta-Reptile Model
+Accuracy = 93.33%

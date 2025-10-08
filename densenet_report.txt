@@ -1,0 +1,18 @@
+
+Model Performance Report (Without Optimization)
+-----------------------------------------------
+Train Loss:      0.1292
+Train Accuracy:  95.10%
+Test Loss:       0.2635
+Test Accuracy:   91.19%
+
+
+
+Model Performance Report (With Optimization)
+-----------------------------------------------
+Train Loss:      0.1374
+Train Accuracy:  94.55%
+Test Loss:       0.2636
+Test Accuracy:   90.22%
+
+
