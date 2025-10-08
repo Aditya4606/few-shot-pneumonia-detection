@@ -111,9 +111,8 @@ def adapt_and_eval(meta_model, support_x, support_y, query_x, query_y, adapt_ste
     pred_labels = np.argmax(preds, axis=1)
     acc = np.mean(pred_labels == query_y)
 
-    with open('meta_reptile_report.txt', 'a') as f:
-        f.write("Accuracy of the Meta-Reptile Model\n")
-        f.write(f"Accuracy = {acc * 100:.2f}%\n")
+    with open('results/meta_reptile_report.txt', 'a') as f:
+        f.write("Accuracy of the Meta-Reptile Model = {acc * 100:.2f}%\n")
 
 
 train_dir = "data/pediatric/train"

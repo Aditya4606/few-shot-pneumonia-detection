@@ -44,7 +44,7 @@ best_model = load_model("best_densenet_model.keras")
 train_loss, train_accuracy = best_model.evaluate(train_generator)
 test_loss, test_accuracy = best_model.evaluate(test_generator)
 report = f"""
-Model Performance Report (Without Optimization)
+Model Performance Report (When layers are frozen)
 -----------------------------------------------
 Train Loss:      {train_loss:.4f}
 Train Accuracy:  {train_accuracy*100:.2f}%
@@ -52,7 +52,7 @@ Test Loss:       {test_loss:.4f}
 Test Accuracy:   {test_accuracy*100:.2f}%
 \n
 """
-with open("densenet_report.txt", 'a') as f:
+with open("results/densenet_report.txt", 'a') as f:
     f.write(report)
 
 
@@ -61,7 +61,7 @@ best_model = load_model("best_model.keras")
 train_loss, train_accuracy = best_model.evaluate(train_generator)
 test_loss, test_accuracy = best_model.evaluate(test_generator)
 report = f"""
-Model Performance Report (With Optimization)
+Model Performance Report (When layers are not frozen)
 -----------------------------------------------
 Train Loss:      {train_loss:.4f}
 Train Accuracy:  {train_accuracy*100:.2f}%
@@ -69,5 +69,5 @@ Test Loss:       {test_loss:.4f}
 Test Accuracy:   {test_accuracy*100:.2f}%
 \n
 """
-with open("densenet_report.txt", 'a') as f:
+with open("results/densenet_report.txt", 'a') as f:
     f.write(report)

@@ -1,5 +1,5 @@
 
-Model Performance Report (Without Optimization)
+Model Performance Report (When layers are frozen)
 -----------------------------------------------
 Train Loss:      0.1292
 Train Accuracy:  95.10%
@@ -8,7 +8,7 @@ Test Accuracy:   91.19%
 
 
 
-Model Performance Report (With Optimization)
+Model Performance Report (When layers are not frozen)
 -----------------------------------------------
 Train Loss:      0.1374
 Train Accuracy:  94.55%
